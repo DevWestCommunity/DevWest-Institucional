@@ -1,0 +1,20 @@
+:root{
+    /* colors */
+    --color-primary: #ff6600;
+    --color-second: #45322e;
+    --color-black: #222;
+    --color-white:#f5f3f3;
+    
+    /* fonts */
+    --font-title: 'verdana', sans-serif;
+    --font-text: 'roboto', sans-serif;
+    --font-size: 16px;
+
+    /* Colors Bootstrap */
+    --bs-primary:var(--color-primary);
+    --bs-primary-rgb:var(--color-primary);
+    --bs-primary-bg-subtle:#bb4d04;
+    --bs-primary-border-subtle:var(--color-primary);
+    --bs-primary-text-emphasis:var(--color-primary);
+}
+
