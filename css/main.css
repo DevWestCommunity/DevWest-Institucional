@@ -1,0 +1,65 @@
+:root {
+  /* colors */
+  --color-primary: #ff6600;
+  --color-second: #45322e;
+  --color-black: #222;
+  --color-white: #f5f3f3;
+
+  /* fonts */
+  --font-title: "verdana", sans-serif;
+  --font-text: "roboto", sans-serif;
+  --font-size: 16px;
+
+  /* Colors Bootstrap */
+  --bs-primary: var(--color-primary);
+  --bs-primary-rgb: var(--color-primary);
+  --bs-primary-bg-subtle: #bb4d04;
+  --bs-primary-border-subtle: var(--color-primary);
+  --bs-primary-text-emphasis: var(--color-primary);
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-text);
+  color: var(--color-black);
+}
+
+header {
+  height: 100vh;
+  background-color: var(--color-second);
+}
+
+.title-logo {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .title-logo {
+    font-size: 4rem;
+  }
+}
+
+/* Fonts */
+.fs-normal {
+  font-size: 1rem;
+}
+
+.fs-large {
+  font-size: 1.5rem;
+}
+
+.fs-large-2 {
+  font-size: 2.5rem;
+}
+
+/* Color */
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-color-second {
+  background-color: var(--color-second);
+}
