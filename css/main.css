@@ -1,9 +1,14 @@
+@import "./nav.css";
+@import "./form.css";
+@import "./color.css";
+
 :root {
   /* colors */
   --color-primary: #ff6600;
   --color-second: #45322e;
   --color-black: #222;
-  --color-white: #f5f3f3;
+  --color-shadow: rgba(34, 34, 34, 0.8);
+  --color-white: #fff;
 
   /* fonts */
   --font-title: "verdana", sans-serif;

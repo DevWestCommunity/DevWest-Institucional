@@ -1,0 +1,12 @@
+.button-radius {
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 5px 20px;
+  border-bottom: none;
+  border: solid 2px var(--color-primary);
+  border-radius: 25px;
+}
+
+.button-radius:hover {
+  color: var(--color-primary);
+}
