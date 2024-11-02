@@ -1,0 +1,17 @@
+header {
+  height: 100vh;
+  background-color: var(--color-second);
+}
+
+.title-logo {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .title-logo {
+    font-size: 4rem;
+  }
+}

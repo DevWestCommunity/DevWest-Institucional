@@ -9,10 +9,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/home.css" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top bg-shadow">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="./image/logo-full-devwest.png" alt="logomarca da DevWest" height="40" />
@@ -24,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
+            <a class="nav-link" href="#project">Projetos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Colaboradores</a>
@@ -83,7 +84,57 @@
         prática.
       </p>
       <div class="text-center my-3">
-        <button class="button-radius text-black px-5">Saiba mais</button>
+        <button class="button-radius text-white bg-orange px-5">Saiba mais</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="bg-shadow">
+    <div class="container py-5">
+      <h2 class="orange text-center mb-5">
+        Projetos
+      </h2>
+      <div class="project-area row">
+
+        <div class="col-12 col-md-4 my-3">
+          <div class="card border-0">
+            <a class="text-decoration-none" href="https://google.com.br">
+              <img src="./image/project-tarefa.png" class="card-img-top" alt="projeto tarefa flex">
+              <div class="card-body">
+                <h5 class="card-title text-center text-black">TarefaFlex</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 my-3">
+          <div class="card border-0">
+            <a class="text-decoration-none" href="https://google.com.br">
+              <img src="./image/project-agenda.png" class="card-img-top" alt="projeto agenda">
+              <div class="card-body">
+                <h5 class="card-title text-center text-black">AgendaFlex</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 my-3">
+          <div class="card border-0">
+            <a class="text-decoration-none" href="https://google.com.br">
+              <img src="./image/project-pague.png" class="card-img-top" alt="projeto agenda">
+              <div class="card-body">
+                <h5 class="card-title text-center text-black">PagueFlex</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

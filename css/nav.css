@@ -27,7 +27,7 @@
 
 @media (max-width: 990px) {
   .nav-item {
-    background-color: var(--color-shadow);
+    /* background-color: var(--color-shadow); */
     text-align: center;
     padding-bottom: 10px;
   }
