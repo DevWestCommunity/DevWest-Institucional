@@ -1,3 +1,11 @@
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-color-second {
+  background-color: var(--color-second);
+}
+
 .bg-orange,
 .bg-color-primary {
   background-color: var(--color-primary);
@@ -16,4 +24,8 @@
 .brown,
 .color-second {
   color: var(--color-primary);
+}
+
+.bg-shadow {
+  background-color: var(--color-shadow);
 }
