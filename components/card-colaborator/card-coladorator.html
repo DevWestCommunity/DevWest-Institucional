@@ -1,0 +1,37 @@
+<a href="{{link}}">
+    <div class="colaboratior-card">
+        <img class="img-fluid" src="{{avatar}}" alt="perfil do colaborador">
+        <div class="colaboratior-text">
+            <p class="text-truncate m-0">{{name}}</p>
+            <img src="./image/social/icon-github.png" alt="icone github">
+        </div>
+    </div>
+</a>
+
+<style>
+    .colaboratior-card {
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .colaboratior-card .colaboratior-text {
+        background-color: var(--color-shadow);
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        color: var(--color-white);
+        font-size: 1.4rem;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        transition: ease 1s;
+    }
+
+    .colaboratior-card:hover>.colaboratior-text {
+        top: 50%;
+        transition: ease 1s;
+    }
+</style>
