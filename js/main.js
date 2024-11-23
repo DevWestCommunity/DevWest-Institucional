@@ -1,5 +1,8 @@
-import { cardColaboratorComponent } from "./../components/card-colaborator/card-colaborator.js";
-import { footerComponent } from "./../components/footer-component/footer-component.js";
+import { createComponent } from "./core/components.js";
+import { getColaborator } from "./services/collaborator.service.js";
 
-cardColaboratorComponent();
-footerComponent()
+const collaborator = await getColaborator();
+createComponent("card-collaborator", collaborator);
+
+const dateYear = new Date().getFullYear();
+createComponent("footer", [{ date: dateYear }]);
