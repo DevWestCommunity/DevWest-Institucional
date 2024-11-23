@@ -1,0 +1,107 @@
+<template>
+    <div class="container">
+        <div class="footer-context row">
+            <div class="col-12 col-md-4">
+                <ul>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            TarefaFlex
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            TarefaFlex
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            PagFlex
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <ul>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            Gihub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            Youtube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <ul>
+                    <li>
+                        <a href="mailto:contato@devwest.com.br" target="_blank" rel="noopener noreferrer">
+                            contato@devwest.com.br
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tel:+5521555555555" target="_blank" rel="noopener noreferrer">
+                            +5521555555555
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-company bg-orange text-center">
+        <span>DevWest &copy; {{date}} - todos direitos reservados </span>
+    </div>
+</template>
+
+<style>
+    footer {
+        padding-top: 40px;
+        background-color: var(--color-shadow);
+        color: var(--color-white);
+    }
+
+    footer div {
+        justify-content: space-between;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer li {
+        list-style: none;
+    }
+
+    footer li a {
+        display: block;
+        width: 100%;
+        line-height: 2.2rem;
+        text-decoration: none;
+        color: var(--color-white);
+    }
+
+    footer li a:hover {
+        color: var(--color-primary);
+    }
+
+    .footer-company {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    @media (max-width:768px) {
+        footer li a {
+            text-align: center;
+        }
+    }
+</style>
