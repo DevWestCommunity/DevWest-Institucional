@@ -28,5 +28,5 @@ jobs:
       - name: Trigger Aapanel !
         run: |
           echo Starting Trigger
-          curl -X POST "${{ secrets.PANEL_TRIGGER }}"
+          curl -X POST "${{ vars.PANEL_TRIGGER }}"
           echo Trigger Success
