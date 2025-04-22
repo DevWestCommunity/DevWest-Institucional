@@ -7,11 +7,15 @@ export async function createComponent(name, datas) {
   const listElements = mountElements(context, datas);
 
   for (const newElement of listElements) {
-    element.appendChild(newElement);
+    if (element) {
+      element.appendChild(newElement);
+    }
   }
 
   const styleElement = mountStyle(context);
-  element.appendChild(styleElement);
+  if (styleElement) {
+    element.appendChild(styleElement);
+  }
 }
 
 async function getTemplateContext(localTemplate) {

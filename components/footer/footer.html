@@ -1,107 +1,92 @@
 <template>
+  <footer class="footer">
     <div class="container">
-        <div class="footer-context row">
-            <div class="col-12 col-md-4">
-                <ul>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            TarefaFlex
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            TarefaFlex
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            PagFlex
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <ul>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Gihub
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Youtube
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Facebook
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <ul>
-                    <li>
-                        <a href="mailto:contato@devwest.com.br" target="_blank" rel="noopener noreferrer">
-                            contato@devwest.com.br
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="tel:+5521555555555" target="_blank" rel="noopener noreferrer">
-                            +5521555555555
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="">
+            <!-- <h2 class="footer-logo">DEV<span>WEST</span></h2> -->
+            <img
+              class="logo-img"
+              src="./img/logos/logo-title-devwest.png"
+              alt="logomarca DevWest"
+              height="40"
+            />
+            <p>
+              “Comece sua jornada como desenvolvedor construindo sua experiência
+              com propósito”
+            </p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/DevWestCommunity" target="_blank">
+              <i data-feather="github"></i>
+            </a>
+            <a href="https://www.youtube.com/@dev-west" target="_blank">
+              <i data-feather="youtube"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/share/1BHnbFGkYX/"
+              target="_blank"
+            >
+              <i data-feather="facebook"></i>
+            </a>
+            <!-- <a href="#"><i data-feather="instagram" target="_blank"></i></a> -->
+            <!-- <a href="#"><i data-feather="twitter" target="_blank"></i></a> -->
+            <!-- <a href="#"><i data-feather="linkedin" target="_blank"></i></a> -->
+          </div>
         </div>
+
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="/#home">Início</a></li>
+            <li><a href="/#about">Sobre nós</a></li>
+            <li><a href="/#services">Conteúdos</a></li>
+            <li><a href="/#events">Eventos</a></li>
+            <li><a href="/#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Conteúdos</h3>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/@dev-west" target="_blank"
+                >Conteúdo Online</a
+              >
+            </li>
+            <!-- <li><a href="/#contact" target="_blank">Bootcamps</a></li> -->
+            <li><a href="/#contact">Mentoria</a></li>
+            <li><a href="/#events">Eventos</a></li>
+            <li><a href="/#contact">Consultoria</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Inscreva-se para receber novidades, eventos e oportunidades.</p>
+          <form id="newsletterForm">
+            <input type="email" placeholder="Seu email" required />
+            <button type="submit" class="btn-primary btn-full">
+              Inscrever-se
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span>{{date}}</span> DevWest. Todos os direitos reservados.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="./terms.html">Termos de Uso</a>
+          <a href="./polices.html">Política de Privacidade</a>
+          <a href="./cookies.html">Cookies</a>
+        </div>
+      </div>
     </div>
-    <div class="footer-company bg-orange text-center">
-        <span>DevWest &copy; {{date}} - todos direitos reservados </span>
-    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
 </template>
-
-<style>
-    footer {
-        padding-top: 40px;
-        background-color: var(--color-shadow);
-        color: var(--color-white);
-    }
-
-    footer div {
-        justify-content: space-between;
-    }
-
-    footer ul {
-        padding: 0;
-    }
-
-    footer li {
-        list-style: none;
-    }
-
-    footer li a {
-        display: block;
-        width: 100%;
-        line-height: 2.2rem;
-        text-decoration: none;
-        color: var(--color-white);
-    }
-
-    footer li a:hover {
-        color: var(--color-primary);
-    }
-
-    .footer-company {
-        justify-content: center;
-        padding: 20px;
-    }
-
-    @media (max-width:768px) {
-        footer li a {
-            text-align: center;
-        }
-    }
-</style>

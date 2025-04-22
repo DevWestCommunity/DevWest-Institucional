@@ -1,27 +1,42 @@
 [
   {
     "avatar": "https://avatars.githubusercontent.com/u/9004357?s=400&u=d991d767e2fddb02d1776feedbe0809832c87daa&v=4",
-    "name": "fmoreirati",
-    "link": "https://github.com/fmoreirati"
+    "name": "Fabiano Moreira",
+    "nick": "fmoreirati",
+    "functions": "Fundador & CEO",
+    "linkedin": "https://github.com/fmoreirati",
+    "github": "https://github.com/fmoreirati"
   },
   {
-    "avatar": "https://picsum.photos/200/200?random=2",
-    "name": "Fernando",
-    "link": "https:\\github.com.br"
+    "avatar": "https://avatars.githubusercontent.com/u/78457732?v=4",
+    "name": "NMB",
+    "nick": "Numbzin",
+    "functions": "Desenvolvedor",
+    "linkedin": "",
+    "github": "https://github.com/Numbzin"
   },
   {
-    "avatar": "https://picsum.photos/200/200?random=3",
-    "name": "Anderson",
-    "link": "https:\\github.com.br"
+    "avatar": "https://avatars.githubusercontent.com/u/148160370?v=4",
+    "name": "Anderson Pinheiro",
+    "nick": "PinheiroAnderson",
+    "functions": "Desenvolvedor",
+    "linkedin": "",
+    "github": "https://github.com/PinheiroAnderson"
   },
   {
-    "avatar": "https://picsum.photos/200/200?random=4",
-    "name": "CarlosTI",
-    "link": "https:\\github.com.br"
+    "avatar": "https://avatars.githubusercontent.com/u/144692493?v=4",
+    "name": "Luiz Pedro Santos",
+    "nick": "lewizxp",
+    "functions": "Desenvolvedor",
+    "linkedin": "",
+    "github": "https://github.com/lewizxp"
   },
   {
-    "avatar": "https://picsum.photos/200/200?random=5",
-    "name": "JuliaDEV",
-    "link": "https:\\github.com.br"
+    "avatar": "https://avatars.githubusercontent.com/u/178529471?v=4",
+    "name": "Valença",
+    "nick": "SValenca",
+    "functions": "Desenvolvedor",
+    "linkedin": "",
+    "github": "https://github.com/SValenca"
   }
 ]

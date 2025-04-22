@@ -1,37 +1,7 @@
-@import "./nav.css";
-@import "./form.css";
-@import "./color.css";
-@import "./font.css";
-
-:root {
-  /* colors */
-  --color-primary: #ff6600;
-  --color-second: #45322e;
-  --color-black: #222;
-  --color-white: #fff;
-  --color-gray: #7c7c7c;
-  --color-shadow: rgba(34, 34, 34, 0.808);
-
-  /* fonts */
-  --font-title: "verdana", sans-serif;
-  --font-text: "roboto", sans-serif;
-  --font-size: 16px;
-
-  /* Colors Bootstrap */
-  --bs-primary: var(--color-primary);
-  --bs-primary-rgb: var(--color-primary);
-  --bs-primary-bg-subtle: #bb4d04;
-  --bs-primary-border-subtle: var(--color-primary);
-  --bs-primary-text-emphasis: var(--color-primary);
-}
-
-body {
-  font-size: var(--font-size);
-  font-family: var(--font-text);
-  color: var(--color-black);
-}
-
-a {
-  /* text-decoration: none; */
-  color: var(--color-gray);
-}
+@import "./root.css";
+@import "./navbar.css";
+@import "./buttons.css";
+@import "./footer.css";
+@import "./styles.css";
+@import "./medias.css";
+@import "./colors.css";

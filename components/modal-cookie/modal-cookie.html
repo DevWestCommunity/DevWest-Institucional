@@ -1,0 +1,155 @@
+<template>
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Nós utilizamos cookies para melhorar sua experiência em nosso site. Ao
+      continuar, você concorda com a nossa
+      <a href="./cookies.html">Política de Cookies</a>.
+    </p>
+    <div class="cookie-buttons">
+      <button class="btn-primary" id="accept-all-cookies">Aceitar Todos</button>
+      <button class="btn-outline-primary" id="customize-cookies">
+        Personalizar
+      </button>
+      <button class="btn-outline-primary" id="reject-all-cookies">
+        Rejeitar Todos
+      </button>
+    </div>
+  </div>
+
+  <div id="cookie-modal" class="cookie-modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 class="text-center">Gerenciar Preferências de Cookies</h3>
+      <p>Escolha quais tipos de cookies você deseja aceitar:</p>
+      <div>
+        <label>
+          <input
+            type="checkbox"
+            id="necessary-cookies"
+            value="necessary"
+            checked
+            disabled
+          />
+          Cookies Necessários (sempre ativos)
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" id="analytics-cookies" value="analytics" />
+          Cookies de Análise
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" id="marketing-cookies" value="marketing" />
+          Cookies de Marketing
+        </label>
+      </div>
+      <div class="text-center">
+        <button class="btn-primary" id="save-preferences">
+          Salvar Preferências
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button id="open-cookie-modal" class="floating-cookie-button">
+      <!-- <i data-feather="lock"></i> -->
+      <img src="./img/icons/cookie.png" height="24" alt="acesso aos cookies" />
+    </button>
+  </div>
+</template>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .cookie-banner a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .cookie-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .cookie-buttons button {
+    max-width: 200px;
+  }
+
+  .cookie-modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modal-content div {
+    padding-top: 20px;
+  }
+
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .floating-cookie-button {
+    position: fixed;
+    bottom: 30px; /* Ajuste a distância do botão da parte inferior */
+    right: 30px; /* Ajuste a distância do botão da parte direita */
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 999; /* Garante que o botão fique acima de outros elementos */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.8; /* Adiciona um pouco de transparência */
+    transition: opacity 0.3s ease;
+  }
+
+  .floating-cookie-button:hover {
+    opacity: 1;
+  }
+
+  .floating-cookie-button img {
+    height: 24px;
+  }
+</style>
